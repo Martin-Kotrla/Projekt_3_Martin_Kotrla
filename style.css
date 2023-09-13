@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header *************************/
+header {
+    background: linear-gradient( #404040, #808080 );
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo, #logo img {
+    height: 70px;
+}
+
+nav {
+    margin-right: 30px;
+}
+
+.nav-display {
+    display: block;
+}
+
+.nav-disappear {
+    display: none;
+}
+
+ul li {
+    margin-right: 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.menu {
+    color: #ddd;
+    margin-right: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* songs *************************/
+.mode {
+    color: #404040;
+    font-size: 1.5rem;
+    text-align: right;
+    margin: 1.5rem 1.5rem 0 0;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#playlist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.songDiv {
+    text-align: center;
+    margin: 2rem 0.5rem;
+}
+
+.songDiv p {
+    margin-top: 0.5rem;
+}
+
+.songDiv img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem 0 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.playing {
+    -webkit-box-shadow: 0 0 25px #183db7;
+    box-shadow: 0 0 25px #183db7;
+}
+
+.songDiv img:hover {
+    transform: scale( 1.1 );
+    cursor: pointer;
+}
+
+.lyrics-hidden {
+    width: 80px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lyrics-shown {
+    display: none;
+    text-align: left;
+    max-width: 300px;
+}
+
+.lyrics-shown-show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* about *************************/
+.about {
+    margin: 0 10%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    padding-right: 4rem;
+}
+
+.about-text h2 {
+    padding-bottom: 1rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: 339px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-text,.about-image {
+    flex-basis: 450px;
+}
+
+/* form *************************/
+#banner {
+    width: 100%;
+    filter: invert( 1 );
+    opacity: 0.8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form-login #nameInput, .form-login #confirmPasswordInput, .form-login #resultText {
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid grey;
+    margin-bottom: 1rem;
+    padding: 5px 10px;
+    outline: none;
+    text-align: left;
+}
+
+form button {
+    color: white;
+    background-color:#7187d2;
+    width: 182.4px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form p a {
+    color: #7187d2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.valid {
+    color: yellowgreen;
+}
+
+.invalid {
+    color: red;
+}
+
+/* footer *************************/
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient( #808080, #404040 );
+    height: 70px;
+}
+
+.fa-square-caret-up {
+    color: #404040;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 1rem;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.scrolled-enough {
+    visibility: visible;
+}
+
+.not-scrolled-enough {
+    visibility: hidden;
+}
+
+.fa-square-caret-up:hover {
+    filter: invert( 0.5 );
+}
+
+footer a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+footer i {
+    margin: 0.5rem;
+}
+
+/* dark mode *************************/
+.dark {
+    color: #ddd;
+    background-color: #404040;
+}
+
+.dark #logo img {
+    content: url("/img/dark\ logo.png");
+}
+
+.dark #modeIcon {
+    color: #ddd;
+}
+
+.dark #goToTopIcon {
+    color: #ddd;
+}
+
+.dark #banner {
+    filter: invert( 0 );
+}
+
+.dark input {
+    color: #ddd;
+}
+
+.dark .playing {
+    -webkit-box-shadow: 0 0 20px #3054ca;
+    box-shadow: 0 0 20px #3054ca;
+}

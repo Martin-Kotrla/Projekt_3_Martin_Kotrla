@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Martin Kotrla
+    martinkotrla@email.cz
+    Martin K.#8610 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5aae642169.js" crossorigin="anonymous"></script>
+    <title>Miracle of Sound - Video game music</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="img/logo.png" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#playlist">Songs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <i id="menuIcon" class="fa-solid fa-bars" title="open menu"></i>
+        </div>
+    </header>
+    <section class="songs">
+        <div class="mode">
+            <i id="modeIcon" class="fa-lightbulb fa-solid" title="dark mode"></i>
+        </div>    
+        <h1>Video game music by Miracle of Sound</h1>
+        <div id="playlist"></div>
+        <img class="bg-image" id="banner" src="img/banner.jpg" alt="">
+    </section>
+    <section class="about-&-form">
+        <div class="about">
+            <div class="about-text">
+                <h2 id="about">About</h2>
+                <p>&emsp;&emsp;Gavin Dunne, better known by his stage name Miracle of Sound, is an Irish indie musician known for his music inspired by the characters and tales in Videogames, books, movies and TV shows.
+                <br>
+                &emsp;&emsp;He worked with various videogame industry companies on both cross promotion and in-game songs including Ubisoft, Bioware, EA, Larian and Bethesda for titles such as Mass Effect, Assassin’s Creed, Divinity Original Sin 2, Wasteland 2 and Watch Dogs.
+                <br>            
+                &emsp;&emsp;His songs vary widely in genre and song structures, typically using ones that best fits the song's subject. These have included rock, pop, electronic rock, hard rock, heavy metal, alternative rock, tribal music, dubstep, jazz and even doo-wop.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/Gavin Dunne.jpeg" alt="Gavin Dunne">        
+            </div>
+        </div>
+        <form id="form">
+            <h2 id="register">Register to create playlist</h2>
+            <input type="text" placeholder="Name" id="nameInput" class="black">
+            <input type="email" placeholder="Email" id="emailInput" class="black">
+            <input type="password" placeholder="Password" id="passwordInput" class="black">
+            <input type="password" placeholder="Confirm Password" id="confirmPasswordInput" class="black">
+            <p id="resultText" class="result-text"></p>
+            <button>Sign Up</button>
+            <p id="pFormHere">Have an Account? <a id="formHere">Login Here</a></p>
+        </form>
+    </section>
+    <footer>
+        <i id="goToTopIcon" class="fa-solid fa-square-caret-up" title="Go to top"></i>
+        <a href="mailto:miracleofsound@gmail.com">miracleofsound@gmail.com</a>
+        <div class="icons">
+            <a href="https://www.youtube.com/miracleofsound" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/4FmJD0mpgQ70SNt2EKK8tq" target="_blank"> <i class="fa-brands fa-spotify"></i></a>
+            <a href="https://twitter.com/miracleofsound" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/MiracleOfSound" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miracleofsound" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
